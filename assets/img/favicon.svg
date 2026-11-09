@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#8fb52a"/>
+  <rect x="2" y="2" width="60" height="54" rx="16" fill="#c6f24e"/>
+  <text x="32" y="38" text-anchor="middle" font-family="ui-monospace, Consolas, monospace" font-size="24" font-weight="700" fill="#0c1002">TM</text>
+</svg>

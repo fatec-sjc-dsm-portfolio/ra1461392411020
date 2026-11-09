@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thiago Martins · Portfólio DSM FATEC</title>
+  <meta name="description" content="Portfólio de Thiago Martins de Carvalho, estudante de Desenvolvimento de Software Multiplataforma na FATEC São José dos Campos: seis APIs, contribuições individuais e evolução.">
+  <meta name="author" content="Thiago Martins de Carvalho">
+  <meta name="theme-color" content="#0b0e16">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Thiago Martins · Portfólio DSM FATEC">
+  <meta property="og:description" content="Portfólio de Thiago Martins de Carvalho, estudante de Desenvolvimento de Software Multiplataforma na FATEC São José dos Campos: seis APIs, contribuições individuais e evolução.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("tm-theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="nav">
+    <div class="container nav__bar">
+      <a class="brand" href="#inicio" aria-label="Thiago Martins, voltar ao início">
+        <img src="assets/img/avatar.jpg" width="34" height="34" alt="">
+        <span>Thiago Martins</span>
+      </a>
+      <nav class="nav__links" id="menu" aria-label="Principal"><a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#apis">APIs</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a></nav>
+      <div class="nav__actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Alternar tema"><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+        <button class="icon-btn nav__menu" type="button" data-menu-toggle aria-controls="menu" aria-expanded="false" aria-label="Abrir menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ================= INÍCIO ================= -->
+    <section class="hero on-banner" id="inicio" aria-labelledby="titulo-inicio">
+      <div class="social-rail" aria-label="Redes">
+        <a href="https://www.linkedin.com/in/thiago-martins-fullstack/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://github.com/0thigs" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+        <a href="mailto:machinimavlogs@gmail.com" aria-label="E-mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 7l9 6 9-6"/></svg></a>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__photo reveal">
+          <img src="assets/img/avatar.jpg" width="460" height="460" alt="Foto de Thiago Martins de Carvalho">
+          <div class="keys" aria-hidden="true"><span class="kbd">Ctrl</span><span class="kbd">Alt</span><span class="kbd">Del</span></div>
+        </div>
+        <div class="hero__text reveal">
+          <span class="badge">Desenvolvedor full stack · FATEC SJC</span>
+          <h1 class="hero__title" id="titulo-inicio">Thiago Martins</h1>
+          <p class="hero__role">Web, mobile e IA <span>·</span> 6º semestre de DSM</p>
+          <p class="hero__lead">Em seis APIs com o time Ctrl Alt Del, saí de um dashboard em Flask para um mentor com inteligência artificial, passando por Node.js, Next.js, React, Spring e Flutter.</p>
+          <div class="hero__cta">
+            <a class="btn btn--light" href="#apis">Ver minhas APIs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+            <a class="btn btn--outline-light" href="https://github.com/0thigs" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg> GitHub</a>
+          </div>
+          <div class="hero__stats">
+            <div><strong>6</strong>APIs entregues</div>
+            <div><strong>1.000<small>+</small></strong>commits nas APIs</div>
+            <div><strong>160<small>+</small></strong>revisões de código</div>
+            <div><strong>4</strong>empresas como dev</div>
+          </div>
+        </div>
+      </div>
+      <span class="scroll-hint" aria-hidden="true"></span>
+    </section>
+
+    <!-- ================= SOBRE ================= -->
+    <section class="section" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title" id="titulo-sobre">Sobre mim</h2>
+          <p class="section__lead">Desenvolvedor full stack que gosta de transformar problema real em produto que funciona, do banco de dados à interface.</p>
+        </div>
+
+        <div class="about">
+          <div class="about__text reveal">
+            <h3>Conheça minha trajetória</h3>
+            <p>Sou de <strong>São José dos Campos</strong> e programo desde o técnico em Desenvolvimento de Software na ETEC. Hoje curso o <strong>6º semestre de DSM na FATEC</strong>, onde faço parte do <strong>time Ctrl Alt Del</strong> desde o primeiro semestre: o mesmo núcleo de colegas, seis desafios diferentes e um domínio novo a cada API, de agricultura a direito.</p>
+            <p>O que mais aprendi nesse caminho foi <strong>entregar em equipe</strong>: quebrar o problema em histórias, combinar padrões de código, revisar pull requests e mostrar o incremento ao cliente a cada sprint. Fui Scrum Master no Stocker e code owner do front-end no Smart Farming e no Gaia.</p>
+            <p>Em paralelo, trabalhei como desenvolvedor em empresas de <strong>drones, agricultura de precisão e inteligência artificial</strong>, o que me deu repertório real de front-end, back-end e nuvem. Agora faço também a formação full stack da Alpha EdTech, com foco em DevOps.</p>
+            <a class="btn btn--primary" href="#contato">Entrar em contato</a>
+          </div>
+          <div class="reveal">
+            <h3 style="font-size:21px;margin-bottom:16px">Habilidades</h3>
+            <div class="skill-groups">
+              <div><p class="skill-group__label">Front-end</p><div class="chips"><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">Tailwind CSS</span><span class="chip">React Router</span><span class="chip">Astro</span></div></div>
+              <div><p class="skill-group__label">Back-end</p><div class="chips"><span class="chip">Node.js</span><span class="chip">Fastify</span><span class="chip">NestJS</span><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Flask</span><span class="chip">Java</span><span class="chip">Spring Boot</span></div></div>
+              <div><p class="skill-group__label">Mobile</p><div class="chips"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">React Native</span><span class="chip">Expo</span></div></div>
+              <div><p class="skill-group__label">Dados e IA</p><div class="chips"><span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">Redis</span><span class="chip">Prisma</span><span class="chip">pgvector</span><span class="chip">spaCy</span><span class="chip">Embeddings</span></div></div>
+              <div><p class="skill-group__label">Ferramentas e práticas</p><div class="chips"><span class="chip">Git</span><span class="chip">Docker</span><span class="chip">AWS</span><span class="chip">GitHub Actions</span><span class="chip">Testes automatizados</span><span class="chip">Scrum</span><span class="chip">Figma</span><span class="chip">Jira</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey">
+          <div class="reveal">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>Formação</h3>
+            <ol class="timeline">
+              <li class="t-item is-now"><span class="t-item__when">2024 · 2026, em andamento</span><h4>Desenvolvimento de Software Multiplataforma <span>· FATEC São José dos Campos</span></h4><p>Tecnólogo com uma API por semestre desenvolvida para empresas parceiras, sempre com o time Ctrl Alt Del.</p></li>
+              <li class="t-item is-now"><span class="t-item__when">Nov 2025 · atual</span><h4>Formação Full Stack <span>· Alpha EdTech</span></h4><p>Formação intensiva em desenvolvimento web e DevOps, com módulos de Docker, Prometheus e Grafana.</p></li>
+              <li class="t-item"><span class="t-item__when">2022 · 2023</span><h4>Técnico em Desenvolvimento de Software <span>· ETEC Ilza Nascimento Pintus</span></h4><p>Primeiro contato com programação, lógica, web e banco de dados.</p></li>
+              <li class="t-item"><span class="t-item__when">2022 · 2023</span><h4>Técnico em Administração <span>· PROZ, ensino técnico integrado</span></h4><p>Base de gestão e processos que hoje ajuda a entender o negócio dos clientes.</p></li>
+            </ol>
+          </div>
+          <div class="reveal">
+            <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg>Experiência profissional</h3>
+            <ol class="timeline">
+              <li class="t-item"><span class="t-item__when">Jan 2025 · Out 2025</span><h4>Desenvolvedor Full Stack Júnior <span>· Tecsus</span></h4><p>Desenvolvimento de soluções e manutenção de sistemas em produção.</p></li>
+              <li class="t-item"><span class="t-item__when">2024 · 2025</span><h4>Desenvolvedor Full Stack <span>· NCB Sistemas Embarcados</span></h4><p>Plataforma para controle biológico de pragas com drones: sistema web de planejamento, app de missões e controle de dispensers.</p><div class="chips"><span class="chip">React</span><span class="chip">PostgreSQL</span><span class="chip">Docker</span><span class="chip">AWS</span></div></li>
+              <li class="t-item"><span class="t-item__when">Jan 2024 · Jul 2024</span><h4>Desenvolvedor Full Stack <span>· Global Drones</span></h4><p>Software com IA para visualizar imagens de drones e reconhecer plantas, com dashboards de análise.</p><div class="chips"><span class="chip">React</span><span class="chip">Django</span></div></li>
+              <li class="t-item"><span class="t-item__when">Out 2023 · Mar 2024</span><h4>Desenvolvedor Front-end <span>· Grido AI</span></h4><p>Interfaces em Next.js e Tailwind, design de produto e otimização de performance.</p><div class="chips"><span class="chip">Next.js</span><span class="chip">Tailwind CSS</span></div></li>
+              <li class="t-item"><span class="t-item__when">Jan 2023 · Jul 2023</span><h4>Aprendiz em Suporte de TI <span>· Akaer Engenharia</span></h4><p>Suporte a usuários, inventário de ativos de TI e automação de tarefas repetitivas.</p></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= APIs ================= -->
+    <section class="section section--alt" id="apis" aria-labelledby="titulo-apis">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title" id="titulo-apis">APIs</h2>
+          <p class="section__lead">Aprendizagem por Projeto Integrador: a cada semestre, um projeto real proposto por uma empresa parceira e desenvolvido em equipe com Scrum. Clique em uma API para ver o problema, as tecnologias, as habilidades e, principalmente, as minhas contribuições.</p>
+        </div>
+        <p class="group-label reveal">Projetos integradores · 1º ao 6º semestre</p>
+        <div class="cards">
+          <article class="card card--api card--s1 reveal">
+            <a class="card__media" href="apis/smart-farming.html" tabindex="-1" aria-hidden="true">
+              <img src="assets/img/apis/smart-farming-sensores.webp" alt="Tela do Smart Farming" loading="lazy" decoding="async" style="object-position: left top">
+              <span class="card__logo card__logo--wide"><img src="assets/img/apis/smart-farming-logo.svg" alt="Logo do Smart Farming"></span>
+            </a>
+            <div class="card__body">
+              <div class="card__top"><span class="sem">API 01 · 1º semestre</span><span class="card__role">Dev Team</span></div>
+              <h3>Smart Farming</h3>
+              <p class="card__partner">Parceiro: Cliente interno, estufa inteligente da FATEC · 2024/1</p>
+              <p class="card__desc">Monitoramento de uma estufa inteligente: os dados dos sensores saem do cartão de memória e viram gráficos, tabelas e alertas na web.</p>
+              <div class="chips"><span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Jinja2</span><span class="chip">MySQL</span><span class="chip">Tailwind CSS</span></div>
+              <a class="btn btn--block" href="apis/smart-farming.html">Ver mais<span class="sr-only"> sobre o Smart Farming</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+          </article>
+          <article class="card card--api card--s2 reveal">
+            <a class="card__media" href="apis/stocker.html" tabindex="-1" aria-hidden="true">
+              <img src="assets/img/apis/stocker-dashboard.webp" alt="Tela do Stocker" loading="lazy" decoding="async" style="object-position: left top">
+              <span class="card__logo card__logo--pad"><img src="assets/img/apis/stocker-logo.webp" alt="Logo do Stocker"></span>
+            </a>
+            <div class="card__body">
+              <div class="card__top"><span class="sem">API 02 · 2º semestre</span><span class="card__role">Scrum Master e Dev Team</span></div>
+              <h3>Stocker</h3>
+              <p class="card__partner">Parceiro: Cliente interno, proposta da FATEC · 2024/2</p>
+              <p class="card__desc">Gestão de estoque para várias empresas, com lotes, validade, inventário em tempo real e notificações automáticas.</p>
+              <div class="chips"><span class="chip">TypeScript</span><span class="chip">Next.js</span><span class="chip">React</span><span class="chip">NextUI</span><span class="chip">Tailwind CSS</span></div>
+              <a class="btn btn--block" href="apis/stocker.html">Ver mais<span class="sr-only"> sobre o Stocker</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+          </article>
+          <article class="card card--api card--s3 reveal">
+            <a class="card__media" href="apis/chronos.html" tabindex="-1" aria-hidden="true">
+              <img src="assets/img/apis/chronos-registrar-ponto.webp" alt="Tela do Chronos" loading="lazy" decoding="async" style="object-position: left top">
+              <span class="card__logo"><img src="assets/img/apis/chronos-logo.png" alt="Logo do Chronos"></span>
+            </a>
+            <div class="card__body">
+              <div class="card__top"><span class="sem">API 03 · 3º semestre</span><span class="card__role">Dev Team</span></div>
+              <h3>Chronos</h3>
+              <p class="card__partner">Parceiro: Necto Systems · 2025/1</p>
+              <p class="card__desc">Ponto eletrônico online com banco de horas, solicitações aprovadas pelo gestor e relatórios da jornada.</p>
+              <div class="chips"><span class="chip">Next.js</span><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">HeroUI</span><span class="chip">Tailwind CSS</span></div>
+              <a class="btn btn--block" href="apis/chronos.html">Ver mais<span class="sr-only"> sobre o Chronos</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+          </article>
+          <article class="card card--api card--s4 reveal">
+            <a class="card__media" href="apis/gaia.html" tabindex="-1" aria-hidden="true">
+              <img src="assets/img/apis/gaia-dashboard.webp" alt="Tela do Gaia" loading="lazy" decoding="async" style="object-position: left top">
+              <span class="card__logo card__logo--pad"><img src="assets/img/apis/gaia-logo.webp" alt="Logo do Gaia"></span>
+            </a>
+            <div class="card__body">
+              <div class="card__top"><span class="sem">API 04 · 4º semestre</span><span class="card__role">Dev Team</span></div>
+              <h3>Gaia</h3>
+              <p class="card__partner">Parceiro: Tecsus · 2025/2</p>
+              <p class="card__desc">Estações meteorológicas de baixo custo, um painel de monitoramento e um portal educacional para o ensino médio.</p>
+              <div class="chips"><span class="chip">React 19</span><span class="chip">React Router 7</span><span class="chip">TypeScript</span><span class="chip">Tailwind CSS</span><span class="chip">shadcn/ui</span></div>
+              <a class="btn btn--block" href="apis/gaia.html">Ver mais<span class="sr-only"> sobre o Gaia</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+          </article>
+          <article class="card card--api card--s5 reveal">
+            <a class="card__media" href="apis/animus.html" tabindex="-1" aria-hidden="true">
+              <img src="assets/img/apis/animus-splash.webp" alt="Tela do Animus" loading="lazy" decoding="async" style="object-position: center 35%">
+              <span class="card__logo"><img src="assets/img/apis/animus-logo.webp" alt="Logo do Animus"></span>
+            </a>
+            <div class="card__body">
+              <div class="card__top"><span class="sem">API 05 · 5º semestre</span><span class="card__role">Dev Team</span></div>
+              <h3>Animus</h3>
+              <p class="card__partner">Parceiro: Xertica · 2026/1</p>
+              <p class="card__desc">App com inteligência artificial que lê petições, resume o caso e encontra precedentes aplicáveis nas bases nacionais.</p>
+              <div class="chips"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Riverpod</span><span class="chip">go_router</span><span class="chip">Dio</span></div>
+              <a class="btn btn--block" href="apis/animus.html">Ver mais<span class="sr-only"> sobre o Animus</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+          </article>
+          <article class="card card--api card--s6 reveal">
+            <a class="card__media" href="apis/shifu.html" tabindex="-1" aria-hidden="true">
+              <img src="assets/img/apis/shifu-proposta-grafo.webp" alt="Tela do Shifu" loading="lazy" decoding="async" style="object-position: left top">
+              <span class="card__logo"><img src="assets/img/apis/shifu-logo.svg" alt="Logo do Shifu"></span>
+            </a>
+            <div class="card__body">
+              <div class="card__top"><span class="sem">API 06 · 6º semestre</span><span class="card__role">Dev Team</span></div>
+              <h3>Shifu</h3>
+              <p class="card__partner">Parceiro: GSW · 2026/2</p>
+              <p class="card__desc">Mentor com inteligência artificial para desenvolver qualquer habilidade: diagnostica o nível, monta a trilha e acompanha a evolução.</p>
+              <div class="chips"><span class="chip">React 19</span><span class="chip">TanStack Start</span><span class="chip">Tailwind CSS</span><span class="chip">shadcn/ui</span><span class="chip">React Flow</span></div>
+              <a class="btn btn--block" href="apis/shifu.html">Ver mais<span class="sr-only"> sobre o Shifu</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="evo reveal">
+          <div class="evo__head">
+            <h3>Minha evolução ao longo das APIs</h3>
+            <p>Intensidade com que trabalhei em cada área em cada API, estimada a partir dos meus commits, pull requests e revisões.</p>
+          </div>
+          <div class="evo__scroll">
+            <table class="evo__table">
+              <caption class="sr-only">Intensidade de trabalho por área em cada API, de nenhum a principal foco</caption>
+              <thead><tr><th scope="col"><span class="sr-only">Área</span></th><th scope="col"><b>Smart Farming</b>API 01</th><th scope="col"><b>Stocker</b>API 02</th><th scope="col"><b>Chronos</b>API 03</th><th scope="col"><b>Gaia</b>API 04</th><th scope="col"><b>Animus</b>API 05</th><th scope="col"><b>Shifu</b>API 06</th></tr></thead>
+              <tbody><tr><th scope="row">Front-end web</th><td><div class="cell" data-l="4" title="Front-end web no Smart Farming: principal foco"></div></td><td><div class="cell" data-l="1" title="Front-end web no Stocker: pontual"></div></td><td><div class="cell" data-l="4" title="Front-end web no Chronos: principal foco"></div></td><td><div class="cell" data-l="4" title="Front-end web no Gaia: principal foco"></div></td><td><div class="cell" data-l="1" title="Front-end web no Animus: pontual"></div></td><td><div class="cell" data-l="3" title="Front-end web no Shifu: forte"></div></td></tr><tr><th scope="row">Back-end e APIs</th><td><div class="cell" data-l="1" title="Back-end e APIs no Smart Farming: pontual"></div></td><td><div class="cell" data-l="4" title="Back-end e APIs no Stocker: principal foco"></div></td><td><div class="cell" data-l="1" title="Back-end e APIs no Chronos: pontual"></div></td><td><div class="cell" data-l="2" title="Back-end e APIs no Gaia: moderado"></div></td><td><div class="cell" data-l="2" title="Back-end e APIs no Animus: moderado"></div></td><td><div class="cell" data-l="4" title="Back-end e APIs no Shifu: principal foco"></div></td></tr><tr><th scope="row">Mobile</th><td><div class="cell" data-l="0" title="Mobile no Smart Farming: nenhum"></div></td><td><div class="cell" data-l="0" title="Mobile no Stocker: nenhum"></div></td><td><div class="cell" data-l="0" title="Mobile no Chronos: nenhum"></div></td><td><div class="cell" data-l="0" title="Mobile no Gaia: nenhum"></div></td><td><div class="cell" data-l="4" title="Mobile no Animus: principal foco"></div></td><td><div class="cell" data-l="0" title="Mobile no Shifu: nenhum"></div></td></tr><tr><th scope="row">Banco de dados</th><td><div class="cell" data-l="2" title="Banco de dados no Smart Farming: moderado"></div></td><td><div class="cell" data-l="3" title="Banco de dados no Stocker: forte"></div></td><td><div class="cell" data-l="1" title="Banco de dados no Chronos: pontual"></div></td><td><div class="cell" data-l="1" title="Banco de dados no Gaia: pontual"></div></td><td><div class="cell" data-l="2" title="Banco de dados no Animus: moderado"></div></td><td><div class="cell" data-l="3" title="Banco de dados no Shifu: forte"></div></td></tr><tr><th scope="row">Testes automatizados</th><td><div class="cell" data-l="0" title="Testes automatizados no Smart Farming: nenhum"></div></td><td><div class="cell" data-l="2" title="Testes automatizados no Stocker: moderado"></div></td><td><div class="cell" data-l="0" title="Testes automatizados no Chronos: nenhum"></div></td><td><div class="cell" data-l="1" title="Testes automatizados no Gaia: pontual"></div></td><td><div class="cell" data-l="3" title="Testes automatizados no Animus: forte"></div></td><td><div class="cell" data-l="4" title="Testes automatizados no Shifu: principal foco"></div></td></tr><tr><th scope="row">IA e PLN</th><td><div class="cell" data-l="0" title="IA e PLN no Smart Farming: nenhum"></div></td><td><div class="cell" data-l="0" title="IA e PLN no Stocker: nenhum"></div></td><td><div class="cell" data-l="0" title="IA e PLN no Chronos: nenhum"></div></td><td><div class="cell" data-l="0" title="IA e PLN no Gaia: nenhum"></div></td><td><div class="cell" data-l="0" title="IA e PLN no Animus: nenhum"></div></td><td><div class="cell" data-l="4" title="IA e PLN no Shifu: principal foco"></div></td></tr><tr><th scope="row">Infra e DevOps</th><td><div class="cell" data-l="2" title="Infra e DevOps no Smart Farming: moderado"></div></td><td><div class="cell" data-l="1" title="Infra e DevOps no Stocker: pontual"></div></td><td><div class="cell" data-l="0" title="Infra e DevOps no Chronos: nenhum"></div></td><td><div class="cell" data-l="1" title="Infra e DevOps no Gaia: pontual"></div></td><td><div class="cell" data-l="0" title="Infra e DevOps no Animus: nenhum"></div></td><td><div class="cell" data-l="1" title="Infra e DevOps no Shifu: pontual"></div></td></tr><tr><th scope="row">Design e UX</th><td><div class="cell" data-l="2" title="Design e UX no Smart Farming: moderado"></div></td><td><div class="cell" data-l="0" title="Design e UX no Stocker: nenhum"></div></td><td><div class="cell" data-l="1" title="Design e UX no Chronos: pontual"></div></td><td><div class="cell" data-l="1" title="Design e UX no Gaia: pontual"></div></td><td><div class="cell" data-l="2" title="Design e UX no Animus: moderado"></div></td><td><div class="cell" data-l="4" title="Design e UX no Shifu: principal foco"></div></td></tr><tr><th scope="row">Revisão e gestão</th><td><div class="cell" data-l="3" title="Revisão e gestão no Smart Farming: forte"></div></td><td><div class="cell" data-l="3" title="Revisão e gestão no Stocker: forte"></div></td><td><div class="cell" data-l="2" title="Revisão e gestão no Chronos: moderado"></div></td><td><div class="cell" data-l="4" title="Revisão e gestão no Gaia: principal foco"></div></td><td><div class="cell" data-l="2" title="Revisão e gestão no Animus: moderado"></div></td><td><div class="cell" data-l="3" title="Revisão e gestão no Shifu: forte"></div></td></tr></tbody>
+            </table>
+          </div>
+          <div class="evo__legend" aria-hidden="true"><span><i class="cell" data-l="0"></i>nenhum</span><span><i class="cell" data-l="1"></i>pontual</span><span><i class="cell" data-l="2"></i>moderado</span><span><i class="cell" data-l="3"></i>forte</span><span><i class="cell" data-l="4"></i>principal foco</span></div>
+          <div class="evo__notes">
+            <div class="note"><b>API 1 e 2</b><h4>Fundamentos</h4><p>Comecei pelo front-end com Flask e Tailwind e, no semestre seguinte, fui para o back-end em Node com arquitetura em camadas e testes.</p></div>
+            <div class="note"><b>API 3 e 4</b><h4>Front moderno e liderança técnica</h4><p>Next.js e React Router em profundidade e o papel de code owner, revisando e padronizando o código do time.</p></div>
+            <div class="note"><b>API 5 e 6</b><h4>Ponta a ponta, mobile e IA</h4><p>Funcionalidades completas do banco à tela, app em Flutter e, no Shifu, PLN, embeddings e agentes de IA.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJETOS ================= -->
+    <section class="section" id="projetos" aria-labelledby="titulo-projetos">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title" id="titulo-projetos">Outros projetos</h2>
+          <p class="section__lead">Experiências profissionais, trabalhos de outras disciplinas e projetos pessoais. Projetos de empresas aparecem sem marcas nem código, apenas com o que eu fiz.</p>
+        </div>
+        <div class="group" style="--dot: var(--s3)">
+          <p class="group-label reveal">Profissionais</p>
+          <div class="cards cards--2">
+            <article class="card card--text reveal">
+              <div class="card__body">
+                <div class="card__top"><span class="card__type">Profissional</span><span class="card__year">2024 · 2025</span></div>
+                <h3>Plataforma de controle biológico com drones</h3>
+                <p class="card__partner">Desenvolvedor full stack · NCB Sistemas Embarcados</p>
+                <p class="card__desc">Sistema web em nuvem para planejar e rastrear áreas de aplicação de controle biológico de pragas, app de execução de missões dos drones e controle dos dispensers que liberam os insumos no campo.</p>
+                <div class="chips"><span class="chip">React</span><span class="chip">PostgreSQL</span><span class="chip">Docker</span><span class="chip">AWS</span></div>
+              </div>
+            </article>
+            <article class="card card--text reveal">
+              <div class="card__body">
+                <div class="card__top"><span class="card__type">Profissional</span><span class="card__year">2025</span></div>
+                <h3>Desenvolvimento e manutenção de sistemas</h3>
+                <p class="card__partner">Desenvolvedor full stack júnior · Tecsus</p>
+                <p class="card__desc">Desenvolvimento de novas funcionalidades e manutenção de sistemas em produção, do front-end ao back-end, junto ao time de tecnologia.</p>
+                <div class="chips"><span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Node.js</span></div>
+              </div>
+            </article>
+            <article class="card card--text reveal">
+              <div class="card__body">
+                <div class="card__top"><span class="card__type">Profissional</span><span class="card__year">2024</span></div>
+                <h3>Visão computacional para imagens de drones</h3>
+                <p class="card__partner">Desenvolvedor full stack · Global Drones</p>
+                <p class="card__desc">Software com inteligência artificial para visualizar fotos aéreas e reconhecer plantas nas imagens, com dashboards interativos para analisar os dados coletados em campo.</p>
+                <div class="chips"><span class="chip">React</span><span class="chip">Django</span><span class="chip">Python</span><span class="chip">IA</span></div>
+              </div>
+            </article>
+            <article class="card card--text reveal">
+              <div class="card__body">
+                <div class="card__top"><span class="card__type">Profissional</span><span class="card__year">2023 · 2024</span></div>
+                <h3>Front-end de produto com IA</h3>
+                <p class="card__partner">Desenvolvedor front-end · Grido AI</p>
+                <p class="card__desc">Interfaces responsivas em Next.js e Tailwind, design de produto a partir do feedback de clientes e otimização de performance de carregamento.</p>
+                <div class="chips"><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">Tailwind CSS</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="group" style="--dot: var(--s5)">
+          <p class="group-label reveal">Acadêmicos</p>
+          <div class="cards cards--2">
+            <article class="card card--text reveal">
+              <div class="card__body">
+                <div class="card__top"><span class="card__type">Acadêmico</span><span class="card__year">2026</span></div>
+                <h3>SCAN</h3>
+                <p class="card__partner">Análise espacial de desastres naturais · em grupo</p>
+                <p class="card__desc">Plataforma analítica com pipeline ETL em Pandas e dashboard interativo para explorar dados históricos de desastres naturais no mundo. Fui o principal contribuidor do repositório.</p>
+                <div class="chips"><span class="chip">Python</span><span class="chip">Streamlit</span><span class="chip">Plotly</span><span class="chip">Pandas</span></div><div class="card__links"><a href="https://github.com/0thigs/scan" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>Repositório</a></div>
+              </div>
+            </article>
+            <article class="card card--text reveal">
+              <div class="card__body">
+                <div class="card__top"><span class="card__type">Acadêmico</span><span class="card__year">2026</span></div>
+                <h3>Servidor web na AWS EC2</h3>
+                <p class="card__partner">Computação em Nuvem</p>
+                <p class="card__desc">Provisionamento de instância EC2 com Nginx, autenticação por chave, regras de firewall, hardening do servidor e análise de custos com práticas de FinOps.</p>
+                <div class="chips"><span class="chip">AWS EC2</span><span class="chip">Linux</span><span class="chip">Nginx</span><span class="chip">Shell</span></div><div class="card__links"><a href="https://github.com/0thigs/computacao-nuvem-atividade1-ec2" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>Repositório</a></div>
+              </div>
+            </article>
+            <article class="card card--text reveal">
+              <div class="card__body">
+                <div class="card__top"><span class="card__type">Acadêmico</span><span class="card__year">2026</span></div>
+                <h3>Isolation Forest</h3>
+                <p class="card__partner">Detecção de anomalias · em grupo</p>
+                <p class="card__desc">Estudo e aplicação do algoritmo Isolation Forest: tratamento de dados ausentes, detecção de anomalias em um conjunto de dados próprio, gráficos e interpretação.</p>
+                <div class="chips"><span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">Pandas</span><span class="chip">Jupyter</span></div><div class="card__links"><a href="https://github.com/0thigs/isolation-forest" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>Repositório</a></div>
+              </div>
+            </article>
+            <article class="card card--text reveal">
+              <div class="card__body">
+                <div class="card__top"><span class="card__type">Acadêmico</span><span class="card__year">2025</span></div>
+                <h3>Cookiefy</h3>
+                <p class="card__partner">App de receitas · mobile e API</p>
+                <p class="card__desc">App para descobrir, publicar e favoritar receitas, com busca por ingrediente, filtros e modo de preparo com timers. Fiz o app em Expo e a API em Fastify, em sprints.</p>
+                <div class="chips"><span class="chip">React Native</span><span class="chip">Expo</span><span class="chip">Fastify</span><span class="chip">Prisma</span></div><div class="card__links"><a href="https://github.com/0thigs/cookiefy-mobile" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>App</a><a href="https://github.com/0thigs/cookiefy-server" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>API</a></div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="group" style="--dot: var(--s6)">
+          <p class="group-label reveal">Pessoais</p>
+          <div class="cards cards--2">
+            <article class="card card--text reveal">
+              <div class="card__body">
+                <div class="card__top"><span class="card__type">Pessoal</span><span class="card__year">2025 · 2026</span></div>
+                <h3>ThigsPay</h3>
+                <p class="card__partner">Divisão de despesas em viagens</p>
+                <p class="card__desc">Cada pessoa registra o que pagou e o que consumiu, e o sistema calcula os saldos e gera um plano de acerto com o menor número possível de transferências.</p>
+                <div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Supabase</span><span class="chip">Recharts</span></div><div class="card__links"><a href="https://thigspay.vercel.app" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>Ver online</a></div>
+              </div>
+            </article>
+            <article class="card card--text reveal">
+              <div class="card__body">
+                <div class="card__top"><span class="card__type">Pessoal</span><span class="card__year">2025</span></div>
+                <h3>Meetle</h3>
+                <p class="card__partner">Rede social por interesses</p>
+                <p class="card__desc">Plataforma que conecta pessoas por interesses em comum, com login pelo Google, perfis, sugestão de conexões e chat em tempo real.</p>
+                <div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Supabase</span><span class="chip">TanStack Query</span></div><div class="card__links"><a href="https://meetle.vercel.app" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>Ver online</a></div>
+              </div>
+            </article>
+            <article class="card card--text reveal">
+              <div class="card__body">
+                <div class="card__top"><span class="card__type">Pessoal</span><span class="card__year">2024 · 2025</span></div>
+                <h3>Multiplayer Canvas</h3>
+                <p class="card__partner">Desenho colaborativo em tempo real</p>
+                <p class="card__desc">Quadro onde várias pessoas desenham juntas ao mesmo tempo, com pincéis, cores e formas, autenticação e salvamento das artes.</p>
+                <div class="chips"><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">Supabase</span></div><div class="card__links"><a href="https://github.com/0thigs/multiplayer-canvas" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>Repositório</a></div>
+              </div>
+            </article>
+            <article class="card card--text reveal">
+              <div class="card__body">
+                <div class="card__top"><span class="card__type">Pessoal</span><span class="card__year">2022 · 2023</span></div>
+                <h3>StarDust</h3>
+                <p class="card__partner">Ensino de lógica de programação</p>
+                <p class="card__desc">App mobile que ensina lógica de programação de forma gamificada, criado em parceria com um colega que depois formaria o time Ctrl Alt Del comigo.</p>
+                <div class="chips"><span class="chip">React Native</span><span class="chip">JavaScript</span></div><div class="card__links"><a href="https://github.com/0thigs/StarDust" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>Repositório</a><a href="https://stardust-download.vercel.app" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>Página</a></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="on-banner" id="contato" aria-labelledby="titulo-contato">
+      <div class="container contact reveal">
+        <h2 id="titulo-contato">Contato</h2>
+        <p>Estou aberto a oportunidades de estágio e desenvolvimento, projetos em equipe e boas conversas sobre produto e código.</p>
+        <div class="contact__cta">
+          <a class="btn btn--primary" href="https://www.linkedin.com/in/thiago-martins-fullstack/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg> LinkedIn</a>
+          <a class="btn btn--outline-light" href="https://github.com/0thigs" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg> GitHub</a>
+          <a class="btn btn--outline-light" href="mailto:machinimavlogs@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 7l9 6 9-6"/></svg> E-mail</a>
+        </div>
+      </div>
+      <div class="container">
+        <footer class="footer">
+          <div class="footer__row">
+            <div><strong>Thiago Martins de Carvalho</strong><small>Desenvolvedor full stack · DSM · FATEC São José dos Campos</small></div>
+            <div class="footer__social">
+              <a href="https://www.linkedin.com/in/thiago-martins-fullstack/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+              <a href="https://github.com/0thigs" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+              <a href="mailto:machinimavlogs@gmail.com" aria-label="E-mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 7l9 6 9-6"/></svg></a>
+            </div>
+          </div>
+          <p class="footer__copy">© <span data-year>2026</span> Thiago Martins de Carvalho. Feito com HTML, CSS e JavaScript e hospedado no <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="lightbox" aria-label="Imagem ampliada">
+    <button class="lightbox__close" type="button" aria-label="Fechar imagem"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <img src="data:," alt="">
+    <p></p>
+  </dialog>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
